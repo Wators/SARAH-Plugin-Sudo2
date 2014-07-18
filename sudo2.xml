@@ -1,0 +1,80 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulesudo2" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulesudo2" scope="public">
+    <example>sarah lance vlc, sarah sauvegarde</example>
+    <tag>out.action=new Object(); </tag>
+    <item weight="2"></item>
+    <one-of>
+      <item>lance facebook<tag>out.action.prog="facebook"</tag><tag>out.action._attributes.tts = "ça marche"</tag></item>
+      <item>communauté<tag>out.action.prog="communaute"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles de la communauté sara, bonne lecture"</tag></item>
+      <item>actualité sarah<tag>out.action.prog="communaute"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles de la communauté sara, bonne lecture"</tag></item>
+	  <item>met internette<tag>out.action.prog="chrome"</tag><tag>out.action._attributes.tts = "je vous mets sur google, tout de suite"</tag></item>
+	  <item>met le nette<tag>out.action.prog="chrome"</tag><tag>out.action._attributes.tts = "je vous mets sur google, tout de suite"</tag></item>
+	  <item>mets moi gougueulle<tag>out.action.prog="chrome"</tag><tag>out.action._attributes.tts = "je vous mets sur gougueulle, tout de suite"</tag></item>
+	  <item>korbaine<tag>out.action.prog="korben"</tag><tag>out.action._attributes.tts = "affiche du site corbenne point info, bonne consultation"</tag></item>
+	  <item>met korbaine<tag>out.action.prog="korben"</tag><tag>out.action._attributes.tts = "affiche du site corbenne point info, bonne consultation"</tag></item>
+	  <item>dernieres niouze aillephone<tag>out.action.prog="iphone"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles concernant les aillephone"</tag></item>
+	  <item>actualité aillephone<tag>out.action.prog="iphone"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles concernant les aillephone"</tag></item>
+	  <item>mets les infos<tag>out.action.prog="info"</tag><tag>out.action._attributes.tts = "voici les dernières nouvelles du journal le monde"</tag></item>
+	  <item>j'ai faim<tag>out.action.prog="allo"</tag><tag>out.action._attributes.tts = "Je vais vous trouver un petit quelque chose à manger, dans le coin"</tag></item>
+	  <item>j'ai les crocs<tag>out.action.prog="allo"</tag><tag>out.action._attributes.tts = "voici de quoi passer commande, dans les parages"</tag></item>
+      <item>facebook<tag>out.action.prog="facebook"</tag></item>
+      <item>twitter<tag>out.action.prog="twitter"</tag></item>
+      <item>lance twttier<tag>out.action.prog="twitter"</tag></item>
+      <item>copie<tag>out.action.prog="copy"</tag><tag>out.action._attributes.tts = "contenu copié"</tag></item>
+	  <item>colle<tag>out.action.prog="paste"</tag><tag>out.action._attributes.tts = "contenu collé ."</tag></item>
+	  <item>coupe<tag>out.action.prog="cut"</tag><tag>out.action._attributes.tts = "contenu coupé "</tag></item>
+	  <item>préçedent<tag>out.action.prog="precedent"</tag><tag>out.action._attributes.tts = "page précedente "</tag></item>
+	  <item>suivant<tag>out.action.prog="next"</tag><tag>out.action._attributes.tts = "page suivante"</tag></item>
+	  <item>révoque<tag>out.action.prog="close"</tag><tag>out.action._attributes.tts = "page fermée"</tag></item>
+	  <item>sarah retire<tag>out.action.prog="close"</tag><tag>out.action._attributes.tts = "page fermée"</tag></item>
+	  <item>ferme<tag>out.action.prog="shut"</tag><tag>out.action._attributes.tts = "fermeture de la page"</tag></item>
+	  <item>vérrouille ma séssion<tag>out.action.prog="lock"</tag><tag>out.action._attributes.tts = "Verrouillage ("</tag></item>
+	  <item>réduit<tag>out.action.prog="minimize"</tag><tag>out.action._attributes.tts = "Réduction des pages ."</tag></item>
+	  <item>vue global<tag>out.action.prog="global"</tag><tag>out.action._attributes.tts = "Affichage de la vue Aéro"</tag></item>
+	  <item>affiche la vue d'ensemble<tag>out.action.prog="global"</tag><tag>out.action._attributes.tts = "voici les applications actuellement ouvertes"</tag></item>
+	  <item>ferme<tag>out.action.prog="shut"</tag><tag>out.action._attributes.tts = "fermeture de la page"</tag></item>
+	  <item>restore<tag>out.action.prog="restore"</tag><tag>out.action._attributes.tts = "restauration des fenêtres"</tag></item>
+	  <item>favoris<tag>out.action.prog="fav"</tag><tag>out.action._attributes.tts = "voulez vous enregistrer le lien ? .("</tag></item>
+	  <item>bureau<tag>out.action.prog="minimize"</tag><tag>out.action._attributes.tts = "affichage du bureau"</tag></item>
+	  <item>ouvrir un fichier<tag>out.action.prog="open"</tag><tag>out.action._attributes.tts = "menu de selection"</tag></item>
+	  <item>sarah sauvegarde<tag>out.action.prog="save"</tag><tag>out.action._attributes.tts = "fichier sauvegardé "</tag></item>
+	  <item>rétabli<tag>out.action.prog="retablir"</tag><tag>out.action._attributes.tts = "rétablissement ("</tag></item>
+	  <item>remets<tag>out.action.prog="retablir"</tag><tag>out.action._attributes.tts = "rétablissement ("</tag></item>
+	  <item>annule<tag>out.action.prog="cancel"</tag><tag>out.action._attributes.tts = "je l'enlève ("</tag></item>
+	  <item>annulation<tag>out.action.prog="cancel"</tag><tag>out.action._attributes.tts = "très bien, je retire"</tag></item>
+	  <item>séléctionne tout<tag>out.action.prog="selectall"</tag><tag>out.action._attributes.tts = "Sélection d'ensemble ("</tag></item>
+	  <item>mots clés<tag>out.action.prog="find"</tag><tag>out.action._attributes.tts = "minimoteur de recherche activé"</tag></item>
+	  <item>crèe un fichier<tag>out.action.prog="create"</tag><tag>out.action._attributes.tts = "fichée crée ("</tag></item>
+	  <item>crèe un fichier vide<tag>out.action.prog="create"</tag><tag>out.action._attributes.tts = "Création de fichier ("</tag></item>
+	  <item>affiche le panneau de configuration<tag>out.action.prog="controlpanel"</tag><tag>out.action._attributes.tts = "Affichage du panneau de configuration ("</tag></item>
+	  <item>panneau de configuration<tag>out.action.prog="controlpanel"</tag><tag>out.action._attributes.tts = "voici le panneau de configuration ("</tag></item>
+	  <item>affiche un terminal<tag>out.action.prog="konsole"</tag><tag>out.action._attributes.tts = "terminal activé ("</tag></item>
+	  <item>terminal<tag>out.action.prog="konsole"</tag><tag>out.action._attributes.tts = "terminal activé ("</tag></item>
+	  <item>ouvre une console<tag>out.action.prog="konsole"</tag><tag>out.action._attributes.tts = "console activé ("</tag></item>
+	  <item>console<tag>out.action.prog="konsole"</tag><tag>out.action._attributes.tts = "terminal activé ("</tag></item>
+	  <item>dosse<tag>out.action.prog="konsole"</tag><tag>out.action._attributes.tts = "terminal activé ("</tag></item>
+	  <item>met les infos en direct<tag>out.action.prog="bfm"</tag><tag>out.action._attributes.tts = "connexion avec le direct de la chaine BFM Tévé ("</tag></item>
+	  <item>lance ta page de conf<tag>out.action.prog="home"</tag><tag>out.action._attributes.tts = "La voila"</tag></item>
+	  <item>éteinds les écrans<tag>out.action.prog="screenOff"</tag><tag>out.action._attributes.tts = "je coupe les écrans"</tag></item>
+	  <item>j'ai mal aux yeux<tag>out.action.prog="screenOff"</tag><tag>out.action._attributes.tts = "j'éteins les moniteurs"</tag></item>
+	  <item>moniteur of<tag>out.action.prog="screenOff"</tag><tag>out.action._attributes.tts = "j'éteins les moniteurs"</tag></item>
+	  <item>moniteur onne<tag>out.action.prog="screenOn"</tag><tag>out.action._attributes.tts = "voila"</tag></item>
+	  <item>rallume les écrans<tag>out.action.prog="screeOn"</tag><tag>out.action._attributes.tts = "allumage des moniteurs"</tag></item>
+	  <item>allume les écrans<tag>out.action.prog="screeOn"</tag><tag>out.action._attributes.tts = "allumage des moniteurs"</tag></item>
+	  <item>ouvre le Dévédé<tag>out.action.prog="dvdon"</tag><tag>out.action._attributes.tts = "ouverture du dévédé"</tag></item>
+	  <item>ferme le Dévédé<tag>out.action.prog="dvdoff"</tag><tag>out.action._attributes.tts = "voila"</tag></item>
+	  <item>écran de veille<tag>out.action.prog="scrsaver"</tag><tag>out.action._attributes.tts = " je met lécran de veille"</tag></item>
+	  <item>met lécran de veille<tag>out.action.prog="scrsaver"</tag><tag>out.action._attributes.tts = "voici lécran de veille Matrix"</tag></item>
+	  <item>vide la corbeille<tag>out.action.prog="trash"</tag><tag>out.action._attributes.tts = "vidage de la corbeille"</tag></item>
+	  <item>procéssusse<tag>out.action.prog="process"</tag><tag>out.action._attributes.tts = "affichage des procéssus"</tag></item>
+	  <item>affiche les procéssusse<tag>out.action.prog="process"</tag><tag>out.action._attributes.tts = "affichage des procéssus"</tag></item>
+	  <item>procèss<tag>out.action.prog="process"</tag><tag>out.action._attributes.tts = "affichage des procéssus"</tag></item>
+	  <item>affiche les procèss<tag>out.action.prog="process"</tag><tag>out.action._attributes.tts = "affichage des procéssus"</tag></item>
+
+	  <item>lance iTunes<tag>out.action.prog="play"</tag><tag>out.action._attributes.tts = "ok je lance iTunes"</tag></item>
+	  	  
+    </one-of>
+	
+<tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/sudo2";</tag>
+  </rule>
+</grammar>

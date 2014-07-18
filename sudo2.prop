@@ -1,0 +1,12 @@
+{
+  "modules" : { 
+    "sudo2"  : {
+      "description": "Plugin sudo2 = S.U.D.O (Sarah Users Do Operation) de Ted Kent + commande iTunes ",
+      "version": "1.0",
+	  "Catégorie": "Speech et keycombo",
+	  "Remarque": "pour naviguer, utilisez le plugin control",
+	  "Inspiration ": "Basé sur le petit plugin exec avec des commandes systèmes",
+	  "Auteur ": "Ted Kent"
+    }
+  }
+}
