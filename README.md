@@ -36,7 +36,7 @@ on top of:
 
 ## Description
 
-Launch .exe, .bat, .vbs, script, etc... sur la base du plugin Sudo de Ted Kent
+Launch .exe, .bat, .vbs, script, commande iTunes, etc... sur la base du plugin Sudo de Ted Kent
 
 
 ## Quick Start
